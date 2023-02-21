@@ -1,0 +1,21 @@
+﻿@model DoctorViewModel
+@{
+    ViewData["Title"] = "Details";
+} <h1>Doctor Details</h1>
+
+<div class="row">
+    <div class="col-md-5">
+        <ul class="list-group">
+            <li class="list-group-item"><b>Doctor Name:</b>@Model.DoctorName</li>
+
+            <li class="list-group-item"><b>Specialization Id:</b>@Model.SpecializationId</li>
+
+            <li class="list-group-item"><b>Email Id:</b>@Model.EmailId</li>
+            <li class="list-group-item"><b> Qualification:</b>@Model.Qualification</li>
+            <li class="list-group-item"><b>Experience:</b>@Model.Experience</li>
+            <li class="list-group-item"><b>Specialization :</b>@Model.SpecializationName</li>
+           
+        </ul>
+        <a asp-controller="Doctors" asp-action="Index"> Back To Index</a>
+    </div>
+</div>
